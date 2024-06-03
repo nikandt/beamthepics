@@ -7,5 +7,9 @@
   },
   "routes": [
     { "src": "/(.*)",  "dest": "/api/index.php" }
+  ],
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "https://juicy.vercel.app/favicon.ico" },
+    { "source": "/(.*)", "destination": "/api/index.php" }
   ]
 }
