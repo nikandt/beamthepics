@@ -7,7 +7,7 @@ use Endroid\QrCode\Label\Alignment\LabelAlignmentCenter;
 use Endroid\QrCode\Writer\PngWriter;
 use Endroid\QrCode\Color\Color;
 
-$url = 'http://yourdomain.com/scan.php';
+$url = 'https://beamthepics-7xalo1s9t-nikandts-projects.vercel.app/';
 
 $result = Builder::create()
     ->writer(new PngWriter())
