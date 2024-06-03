@@ -1,12 +1,15 @@
 <?php
-phpinfo();
 require __DIR__ . '/../vendor/autoload.php';
+
+phpinfo();
 
 use Endroid\QrCode\Builder\Builder;
 use Endroid\QrCode\ErrorCorrectionLevel\ErrorCorrectionLevelHigh;
 use Endroid\QrCode\Label\Alignment\LabelAlignmentCenter;
 use Endroid\QrCode\Writer\PngWriter;
 use Endroid\QrCode\Color\Color;
+
+echo implode(',', get_loaded_extensions());
 
 $url = 'https://beamthepics-7xalo1s9t-nikandts-projects.vercel.app/';
 

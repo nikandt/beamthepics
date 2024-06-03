@@ -6,7 +6,10 @@
     }
   },
   "routes": [
-    { "src": "/(.*)",  "dest": "/api/index.php" }
+    { "src": "/(.*)",  "dest": "/api/index.php" },
+	{ "src": "/api/(.*)", "dest": "/api/api/$1" },
+    { "src": "/ini/(.*)", "dest": "/api/ini/$1" },
+    { "src": "/ext/(.*)", "dest": "/api/ext/$1" }
   ],
   "rewrites": [
     { "source": "/favicon.ico", "destination": "https://juicy.vercel.app/favicon.ico" },
