@@ -1,5 +1,7 @@
 <?php
 phpinfo();
+require __DIR__ . '/../vendor/autoload.php';
+
 use Endroid\QrCode\Builder\Builder;
 use Endroid\QrCode\ErrorCorrectionLevel\ErrorCorrectionLevelHigh;
 use Endroid\QrCode\Label\Alignment\LabelAlignmentCenter;
