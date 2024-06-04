@@ -1,2 +1,3 @@
 <?php
-var_dump(opcache_compile_file(__FILE__));
+phpinfo();
+var_dump(opcache_get_status());
