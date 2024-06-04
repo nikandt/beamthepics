@@ -1,18 +1,15 @@
 {
-  "version": 2,
   "functions": {
     "api/*.php": {
       "runtime": "vercel-php@0.7.1"
     }
   },
   "routes": [
-    { "src": "/(.*)",  "dest": "/api/index.php" },
-	{ "src": "/api/(.*)", "dest": "/api/api/$1" },
-    { "src": "/ini/(.*)", "dest": "/api/ini/$1" },
-    { "src": "/ext/(.*)", "dest": "/api/ext/$1" }
+    { "src": "/(.*)",  "dest": "/api/index.php" }
   ],
-  "rewrites": [
-    { "source": "/favicon.ico", "destination": "https://juicy.vercel.app/favicon.ico" },
-    { "source": "/(.*)", "destination": "/api/index.php" }
-  ]
+  "build": {
+    "env": {
+      "NOW_PHP_DEBUG": "1"
+    }
+  }
 }
